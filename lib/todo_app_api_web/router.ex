@@ -20,7 +20,10 @@ defmodule TodoAppApiWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", TodoAppApiWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", TodoAppApiWeb do
+    scope "/v1" do
+      pipe_through :api
+      resources "/todos", TodoController, except: [:new, :edit]
+    end
+  end
 end
