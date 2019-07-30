@@ -10,8 +10,8 @@
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
 
-TodoAppApi.Repo.insert!(%TodoAppApi.TodoApp.Todo{archived: false, title: "美里と旅行に行く"})
-TodoAppApi.Repo.insert!(%TodoAppApi.TodoApp.Todo{archived: false, title: "美里とご飯を食べる"})
-TodoAppApi.Repo.insert!(%TodoAppApi.TodoApp.Todo{archived: false, title: "美里と一緒に寝る"})
-TodoAppApi.Repo.insert!(%TodoAppApi.TodoApp.Todo{archived: false, title: "美里とダラダラする"})
-TodoAppApi.Repo.insert!(%TodoAppApi.TodoApp.Todo{archived: false, title: "美里と散歩する"})
+TodoAppApi.Repo.insert!(%TodoAppApi.TodoApp.Todo{archived: false, title: "旅行に行く"})
+TodoAppApi.Repo.insert!(%TodoAppApi.TodoApp.Todo{archived: false, title: "ご飯を食べる"})
+TodoAppApi.Repo.insert!(%TodoAppApi.TodoApp.Todo{archived: false, title: "寝る"})
+TodoAppApi.Repo.insert!(%TodoAppApi.TodoApp.Todo{archived: false, title: "ダラダラする"})
+TodoAppApi.Repo.insert!(%TodoAppApi.TodoApp.Todo{archived: false, title: "散歩する"})

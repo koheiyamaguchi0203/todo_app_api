@@ -11,8 +11,12 @@ defmodule TodoAppApiWeb.TodoView do
   end
 
   def render("todo.json", %{todo: todo}) do
+    inserted_at = todo.inserted_at
+    |> NaiveDateTime.diff(~N[1970-01-01 00:00:00])
+
     %{id: todo.id,
       title: todo.title,
-      archived: todo.archived}
+      archived: todo.archived,
+      inserted_at: inserted_at}
   end
 end

@@ -8,6 +8,7 @@ defmodule TodoAppApiWeb.TodoController do
 
   def index(conn, _params) do
     todos = TodoApp.list_todos()
+    IO.inspect(todos)
     render(conn, "index.json", todos: todos)
   end
 

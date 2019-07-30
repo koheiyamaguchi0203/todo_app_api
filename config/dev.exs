@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :todo_app_api, TodoAppApi.Repo,
   username: "root",
-  password: "",
+  password: "h19970203",
   database: "todo_app_api_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
